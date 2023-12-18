@@ -6,7 +6,7 @@ class ShellerAbhijit implements CustomerRaju{
     @Override
     public void purches(){
             //rice=7;   // we can't change the interface value, so it is final
-            System.out.println("Raju need" + rice +"kg rice");
+            System.out.println("Raju need " + rice +" kg rice");
     }
 }
 public class interfacecls{
@@ -14,6 +14,7 @@ public class interfacecls{
         ShellerAbhijit obj=new ShellerAbhijit();
         obj.purches();
 
-        System.out.println(CustomerRaju.rice);
+        System.out.println(CustomerRaju.rice);      // interface variable did not depend on object . so it is Static
+
     }
 }
